@@ -15,8 +15,8 @@ source:
   sha256: 44047c53883e7c4c579878d0a4ef9855478cd3f7bebad348135bf3239fd5a055
 
 build:
-  number: 0
-  skip: true  # [win32]
+  noarch: generic
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -44,8 +44,7 @@ about:
   license: GPL (>= 2)
   summary: Functions for performing phylogenetic comparative analyses.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
