@@ -1,4 +1,4 @@
-{% set version = '1.0.1' %}
+{% set version = "1.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/caper_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/caper/caper_{{ version }}.tar.gz
-  sha256: 44047c53883e7c4c579878d0a4ef9855478cd3f7bebad348135bf3239fd5a055
+  sha256: bcbeb788983e2cad656afb166f6f979fb67fb432a60fc35160d9447e6dfac2b1
 
 build:
   noarch: generic
-  number: 1004
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,7 +42,7 @@ about:
   license: GPL-2.0-or-later
   summary: Functions for performing phylogenetic comparative analyses.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
