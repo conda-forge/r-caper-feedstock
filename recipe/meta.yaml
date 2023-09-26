@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/caper_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/caper/caper_{{ version }}.tar.gz
-  sha256: bcbeb788983e2cad656afb166f6f979fb67fb432a60fc35160d9447e6dfac2b1
+  sha256: 4f769748c5db33863d47adf10823cfef21d99c7bd07e9d33072487fd48e135b8
 
 build:
   noarch: generic
