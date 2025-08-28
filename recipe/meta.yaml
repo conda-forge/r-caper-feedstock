@@ -1,4 +1,4 @@
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/caper_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/caper/caper_{{ version }}.tar.gz
-  sha256: 4f769748c5db33863d47adf10823cfef21d99c7bd07e9d33072487fd48e135b8
+  sha256: 0125ce168e69ebc6d3c47ee0d024d8d5a4a7ba5beb54eff12a126a6d2b3869a4
 
 build:
   noarch: generic
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
